@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <h1>Calculadora</h1>
+        <br>
+        <label for="txtNum1">Valor 1: </label><input type="number" id="txtNum1">
+        <label for="txtNum2">Valor 2:</label>
+        <input type="number" id="txtNum2">
+        <br>
+        <input type="button" value="Somar" id="btnSomar">
+        <input type="button" value="Subtrair" id="btnSubtrair">
+        <h2 id="resultado">Resultado: </h2>
+    </main>
+
+
+
+    <script>
+
+        var botao = document.getElementById('btnSomar');
+        var botaoSubtrair = document.getElementById('btnSubtrair');
+
+        var n1 = document.getElementById('txtNum1');
+        var n2 = document.getElementById('txtNum2');
+
+        
+        function somar()
+        {
+            var num1 = Number(n1.value);
+            var num2 = Number(n2.value);
+            var soma = num1+num2;
+
+            var resultado = document.getElementById('resultado');
+
+
+            botao.style.background = "green";
+
+            resultado.innerText = `Resultado da Soma entre ${num1} e ${num2} é ${soma}`;
+        }
+
+        function subtrair()
+        {
+            var num1 = Number(n1.value);
+            var num2 = Number(n2.value);
+
+            var calc = num1 - num2;
+
+            var texto = `O resultado da subtração entre ${num1} e ${num2} é: ${calc}`;
+
+            var resultado = document.getElementById('resultado');
+
+            resultado.innerText = texto;
+
+            botaoSubtrair.style.background = 'green';
+        }
+
+        function colorirNormal()
+        {
+            botao.style.background='orange';
+            botaoSubtrair.style.background='orange';
+        }
+
+
+        botao.addEventListener('mouseover',somar);
+        botao.addEventListener('mouseout',colorirNormal);
+        botao.addEventListener('click',somar);
+
+
+        botaoSubtrair.addEventListener('mouseover',subtrair);
+        botaoSubtrair.addEventListener('mouseout',colorirNormal);
+    </script>
+
+
+
+
+</body>
+</html>

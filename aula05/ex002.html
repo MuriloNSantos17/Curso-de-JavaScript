@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Java Script</title>
+</head>
+<body>
+    <h1>Olá Mundo Boy</h1>
+
+    <script>
+        var nome = window.prompt("What's your name?");
+        alert("Nice to meet you, "+nome+" !")
+
+        var n1 = window.prompt("What's is the First number");
+        var n2 = window.prompt("What's is the second number?");
+
+        var soma = Number.parseInt(n1)+Number.parseInt(n2);
+
+        alert(`The sum beetween ${n1} and ${n2} is: " ${soma}`);
+
+        alert('Teste do Number')    
+
+        n1 = window.prompt("Number 1: ");
+        n2 = window.prompt("Number 2: ");
+
+        soma = Number(n1) + Number(n2);
+
+        window.alert("The second sum is: "+soma);
+
+        nome = window.prompt("What's your name mother fucker?");
+        document.write(`Your name have ${nome.length} letters <br>`);
+        document.write(`Your name UPPER ${nome.toUpperCase()} <br>`);
+        document.write(`Your name lower ${nome.toLowerCase()} <br>`)
+    </script>
+</body>
+</html>

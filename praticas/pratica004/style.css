@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body
+{
+    background-color: aqua;
+    font-family: 'New Tegomin', serif;
+    font-size: 20px;;
+    text-align: center;
+}
+
+h1,h2{
+    color: #FFFFFF;
+    
+}
+
+section
+{
+    padding: 20px;
+    width: 500px;
+    background-color: #FFFFFF;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.425);
+}
+
+h2{
+    font-style: italic;
+}
+
+button
+{
+    margin-bottom: 10px;
+}
