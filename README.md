@@ -11,7 +11,7 @@ VSCode para melhor visualização do código: https://code.visualstudio.com/
 Google Chrome: https://www.google.com/intl/pt-BR/chrome/ 
 NodeJS para execução dos exercícios e aulas: https://nodejs.org/en/
 
-## Link Certificado 📰 
+## Link Certificado 📃
 https://drive.google.com/file/d/189_alwIo2g-QMFrzOzHD7l-StsXCmgPj/view 
 
 ## ✒️ Autores
